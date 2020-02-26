@@ -9,9 +9,9 @@ name: NanoPi R1S-H5 OpenWrt 19.07 Autobuild
 on:
   release:
     types: [published]
-  #push:
-  #  branches:
-  #    - master
+  push:
+    branches:
+      - master
     paths:
       - "R1S-H5.diffconfig"
   #  schedule:
