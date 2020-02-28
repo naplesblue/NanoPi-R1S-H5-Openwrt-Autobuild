@@ -7,8 +7,8 @@
 name: NanoPi R1S-H5 OpenWrt 19.07 Autobuild
 
 on:
-  release:
-    types: [published]
+  #release:
+  #  types: [published]
   push:
     branches:
       - master
@@ -16,8 +16,8 @@ on:
       - "R1S-H5.diffconfig"
   #  schedule:
   #    - cron: 0 8 * * 5
-  watch:
-    types: [started]
+  #watch:
+  #  types: [started]
 
 jobs:
   build:
@@ -34,7 +34,7 @@ jobs:
           sudo -E apt-get update
           sudo -E apt-get clean
           sudo wget -O - https://raw.githubusercontent.com/friendlyarm/build-env-on-ubuntu-bionic/master/install.sh | bash
-          sudo -E apt-get -y install bc
+          sudo -E apt-get -y install bc upx
           
       - name: Clone Lean's OpenWrt source code
         env:
