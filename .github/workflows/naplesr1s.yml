@@ -4,7 +4,7 @@
 # Author: tjuyy
 #=================================================
 
-name: NanoPi R1S-H5 OpenWrt 19.07 Autobuild
+name: NanoPi R1S-H5 OpenWrt 19.07 Autobuild try out
 
 on:
   #release:
@@ -12,8 +12,8 @@ on:
   push:
     branches:
       - master
-    paths:
-      - "R1S-H5.diffconfig"
+  #  paths:
+  #    - "R1S-H5.diffconfig"
   #  schedule:
   #    - cron: 0 8 * * 5
   #watch:
